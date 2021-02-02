@@ -1,0 +1,17 @@
+{
+  "name": "Kizuna-Ai",
+  "version": "1.0.0",
+  "description": "Chat with super A.I.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "IhsanGan",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1"
+  }
+}
