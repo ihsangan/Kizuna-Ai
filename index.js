@@ -14,14 +14,14 @@ client.on('message', async message => {
     if (message.author.bot) return;
     message.channel.startTyping();
     let uri = message.content;
-    let content = encodeURI(uri);
-    let { data } = await axios.get(`https://api.shadeoxide.gq/api/chatbot?message=${content}&name=Kizuna%20Ai&user=${message.author.id}&gender=female`);
-    message.channel.send(data.message)
+    let content = encodeURIComponent(uri);
+    let { data } = await axios.get(`https://api.affiliateplus.xyz/api/chatbot?message=${content}&botname=Kizuna%20Ai&ownername=Ihsan&user=${message.author.id}`);
     message.channel.stopTyping();
+    message.channel.send(data.message);
 });
 client.login(process.env.TOKEN);
 //change if you run in replit or glitch, delete if ou run in VPS
-let urls = ["https://your.project.name/"]
+let urls = ["https://aichan.iganss.repl.co/"]
 setInterval(function() {
             urls.forEach(url => {
             axios.get(url).catch(() => {});
